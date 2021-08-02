@@ -7,7 +7,7 @@ print ("Project landscape")
 print ("/!\ ATTENTION /!\ ")
 print ("If your client don't save the log in the minecraft folder this program won't function")
 pattern = 'You earned'
-matching_lines = [line for line in open('/Users/vincenzodeluca/Library/Application Support/minecraft/logs/latest.log').readlines() if pattern in line] # please edit /Users/vincenzodeluca/Library/...
+matching_lines = [line for line in open('%appdata%/.minecraft/logs/latest.log').readlines() if pattern in line] # please edit /Users/vincenzodeluca/Library/...
  #and replace vincenzodeluca whit your user (You can find what is your user by pressing Shift+Cmd+G on the finder, and typing /users and seeing what is the name of your user)
 
 print ("Select from this menu")
