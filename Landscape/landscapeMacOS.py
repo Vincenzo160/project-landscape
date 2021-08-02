@@ -2,7 +2,7 @@
 from os import get_exec_path
 import re
 
-print ("Version: 1.0")
+print ("Version: 1.1")
 print ("Project landscape")
 print ("/!\ ATTENTION /!\ ")
 print ("If your client don't save the log in the minecraft folder this program won't function")
@@ -35,7 +35,7 @@ def ssum():
     print("GEXP Earned = {}".format(sum))
 
 
-if input == "g" or input == "G": list()
+if input == "g" or input == "G" or input == "": list()
 if input == "t" or input == "T": ssum()
 
 
