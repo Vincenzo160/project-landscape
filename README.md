@@ -1,5 +1,5 @@
 # Project Landscape
-A simple script which allows you to see how much GEXP you got in the last Minecraft Hypixel server session
+A simple script which allows you to see how much GEXP for playing in the last Minecraft Hypixel server session
 
 ## Usage
 1. Install python 3.9.x from the official [website](https://www.python.org/downloads/)
