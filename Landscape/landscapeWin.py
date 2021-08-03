@@ -14,6 +14,7 @@ matching_lines = [line for line in open('%appdata%/.minecraft/logs/latest.log').
 if matching_lines == []:
     print ("")
     print ("No GEXP Found, if you think this is an error please report it on https://bit.ly/reportnoGEXP")
+    print ("")
 print ("Select from this menu")
 print ("Show [G]exp earned:")
 print ("Show [T]otal Gexp earned:")
