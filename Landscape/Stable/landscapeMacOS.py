@@ -2,8 +2,9 @@
 from os import get_exec_path
 import re
 from sys import version
+import time
 
-version = '1.2'
+version = '1.2.1'
 print ("Version: " + version)
 print ("Project landscape")
 print ("/!\ ATTENTION /!\ ")
@@ -43,6 +44,7 @@ def ssum():
 if input == "g" or input == "G" or input == "": list()
 if input == "t" or input == "T": ssum()
 
+time.sleep(10)
 
 
 exit()
