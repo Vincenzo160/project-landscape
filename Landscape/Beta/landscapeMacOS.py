@@ -7,7 +7,7 @@ import re
 
 
 
-version = '1.3 [BETA]'
+version = '1.3 [BETA 2]'
 
 path = '/Users/vincenzodeluca/Library/Application Support/minecraft/logs/latest.log'
 
@@ -35,7 +35,7 @@ for s in matching_lines:
     sum = sum + int(m.group(1))
     print(m.group(1))
 total = ("Total GEXP Earned = {}".format(sum))
-total = tk.Label(text="Total GEXP Earned = {}".format(sum), width=50, height=5)
+total = tk.Label(text="Total GEXP Earned: {}".format(sum), width=50, height=5)
 list = tk.Label(text="Last amount of GEXP: " + m.group(1), width=50, height=5)
 
 
