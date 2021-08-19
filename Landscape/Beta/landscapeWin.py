@@ -9,7 +9,8 @@ import re
 
 version = '1.3 [BETA 2]'
 
-path = '%appdata%/.minecraft/logs/latest.log'
+path = 'C:/Users/USERNAME/.minecraft/logs/latest.log' # please edit C:/Users/USERNAME/.minecraft/...
+#and replace USERNAME whit your user, info: https://github.com/Vincenzo160/project-landscape/wiki/Setting-the-path
 
 print ("Version: " + version)
 print ("Project landscape")
@@ -27,8 +28,7 @@ def close_window():
 
 
 pattern = 'You earned'
-matching_lines = [line for line in open(path).readlines() if pattern in line] # please edit /Users/vincenzodeluca/Library/...
-#and replace vincenzodeluca whit your user (You can find what is your user by pressing Shift+Cmd+G on the finder, and typing /users and seeing what is the name of your user)
+matching_lines = [line for line in open(path).readlines() if pattern in line] 
 sum = 0
 for s in matching_lines:
     m = re.search("earned (\\d+) GEXP", s)
