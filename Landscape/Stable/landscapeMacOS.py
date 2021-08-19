@@ -11,7 +11,7 @@ print ("/!\ ATTENTION /!\ ")
 print ("If your client don't save the log in the minecraft folder this program won't function")
 pattern = 'You earned'
 matching_lines = [line for line in open('/Users/vincenzodeluca/Library/Application Support/minecraft/logs/latest.log').readlines() if pattern in line] # please edit /Users/vincenzodeluca/Library/...
- #and replace vincenzodeluca whit your user (You can find what is your user by pressing Shift+Cmd+G on the finder, and typing /users and seeing what is the name of your user)
+ #and replace vincenzodeluca whit your user, info: https://github.com/Vincenzo160/project-landscape/wiki/Setting-the-path
 if matching_lines == []:
     print ("")
     print ("No GEXP Found, if you think this is an error please report it on https://bit.ly/reportnoGEXP")
