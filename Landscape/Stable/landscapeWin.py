@@ -3,8 +3,10 @@ from os import get_exec_path
 import re
 from sys import version
 import time
+import logging
+from datetime import datetime
 
-version = '1.2.1'
+version = '1.3.0'
 print ("Version: " + version)
 print ("Project landscape")
 print ("/!\ ATTENTION /!\ ")
@@ -19,6 +21,7 @@ if matching_lines == []:
 print ("Select from this menu")
 print ("Show [G]exp earned:")
 print ("Show [T]otal Gexp earned:")
+print ("Save T[O] File:")
 input = input(":")
 
 def list():
@@ -40,11 +43,25 @@ def ssum():
         sum = sum + int(m.group(1))
     print("GEXP Earned = {}".format(sum))
 
+def slog():
+    logging.basicConfig(filename="GEXP.log", level=logging.INFO)
+    print("")
+    print("Saving..")
+    now = datetime.now()
+    current_time = now.strftime("%Y %M %D %H:%M:%S")
+    print(current_time)
+    logging.info(current_time)
+    sum = 0
+    for s in matching_lines:
+        m = re.search("earned (\\d+) GEXP", s)
+        sum = sum + int(m.group(1))
+        logging.info(m.group(1))
+    logging.info("Total GEXP Earned = {}".format(sum))
+    print("GEXP.log Saved Succesfully in your user root")
 
 if input == "g" or input == "G" or input == "": list()
 if input == "t" or input == "T": ssum()
-
-time.sleep(10)
+if input == "o" or input == "O": slog()
 
 
 exit()
