@@ -6,7 +6,7 @@ import time
 import logging
 from datetime import datetime
 
-version = '1.3.0'
+version = '1.2.3'
 print ("Version: " + version)
 print ("Project landscape")
 print ("/!\ ATTENTION /!\ ")
