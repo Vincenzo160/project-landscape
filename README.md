@@ -1,6 +1,7 @@
 # Project Landscape
 A simple script which allows you to see how much GEXP you earned for playing in the Minecraft Server Hypixel
 
+
 ## Usage
 1. Install python 3.9.x from the official [website](https://www.python.org/downloads/)
 2. [Download](https://github.com/Vincenzo160/project-landscape/releases) Project Landscape
